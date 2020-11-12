@@ -1,0 +1,26 @@
+body {
+    background-color: #e7e7de;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.logo {
+    width: 350px;
+    height: 350px;
+}
+
+.campo, .logoContainer, .formLogin, .button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.button {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button button {
+    margin-top: 20px;
+    width: 
+}

@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container'
 import './index.css'
 import TextField from '@material-ui/core/TextField'
 
-const Login = () => {
+const Cadastro = () => {
     return (
         <>
             <Container fixed className="formLogin">
@@ -13,17 +13,20 @@ const Login = () => {
                     <img className="logo" src={logo} alt='Logo SnitchTracker com simbolo de átomo em azul' />
                 </picture>
                 <div className="campo">
+                    <TextField id="standard-basic" label="Nome Completo" />
+                </div>
+                <div className="campo">
                     <TextField id="standard-basic" label="E-mail" />
                 </div>
                 <div className="campo">
-                    <TextField id="standard-basic" type="password" label="senha" />
+                    <TextField id="standard-basic" type="password" label="Senha" />
+                </div>
+                <div className="campo">
+                    <TextField id="standard-basic" type="password" label="Confirme a senha" />
                 </div>
                 <div className="button">
                     <Button variant="contained" color="primary">
-                        Entrar
-                    </Button>
-                    <Button variant="outlined">
-                        Cadastrar-se
+                        Cadastrar
                     </Button>
                 </div>
             </Container>
@@ -31,4 +34,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Cadastro
