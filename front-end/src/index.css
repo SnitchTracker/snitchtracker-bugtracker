@@ -2,3 +2,8 @@ body {
     background-color: #e7e7de;
     font-family: 'Varela Round', sans-serif;
 }
+
+.menu-lateral .logo {
+    width: 100px;
+    height: 100px
+}

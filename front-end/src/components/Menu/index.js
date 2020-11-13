@@ -14,6 +14,8 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import PrimarySearchAppBar from '../../components/Barra'
 import CustomizedTables from '../../components/Grid'
+import logo from '../img/logomenor.png'
+import './index.css'
 
 const drawerWidth = 240;
 
@@ -55,15 +57,16 @@ export default function PermanentDrawerLeft() {
                 </Toolbar>
             </AppBar>
             <Drawer
-                className={classes.drawer}
+                className={`${classes.drawer} menu-lateral`}
                 variant="permanent"
                 classes={{
                     paper: classes.drawerPaper,
                 }}
                 anchor="left"
             >
-                <div className={classes.toolbar} />
-            
+                <div className='logo-container'>
+                    <img className='logo' src={logo} />
+                </div>
                 <Divider />
                 <List>
                     {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
@@ -83,14 +86,14 @@ export default function PermanentDrawerLeft() {
                     ))}
                 </List>
             </Drawer>
-            <main className={classes.content}>
-                <div className={classes.toolbar} />
-                <Typography paragraph>
-                    <CustomizedTables />
-                </Typography>
-                <Typography paragraph>
-                </Typography>
-            </main>
-        </div>
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Typography paragraph>
+                        <CustomizedTables />
+                    </Typography>
+                    <Typography paragraph>
+                    </Typography>
+                </main>
+            </div>
     );
 }
