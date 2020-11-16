@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
-import DashBoard from './pages/dashboard'
-import Login from './pages/login'
+import DashBoard from './pages/Dashboard'
+import Login from './pages/Login'
 
 function App(){
   return(
