@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
-import DashBoard from './pages/Dashboard'
-import Login from './pages/Login'
+import Cadastro from './pages/cadastro'
+import DashBoard from './pages/dashboard'
+import Login from './pages/login'
 
 function App(){
   return(
@@ -18,6 +19,7 @@ function App(){
       </nav>
       <Route exact path="/" component={Login} />
       <Route path="/dashboard" component={DashBoard} />
+      <Route path="/cadastrar" component={Cadastro} />
     </main>
   )
 }

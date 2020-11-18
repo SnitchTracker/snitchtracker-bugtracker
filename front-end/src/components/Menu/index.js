@@ -10,12 +10,17 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import PrimarySearchAppBar from '../../components/Barra'
-import CustomizedTables from '../../components/Grid'
-import logo from '../img/logomenor.png'
-import './index.css'
+import PrimarySearchAppBar from '../../components/Barra';
+import CustomizedTables from '../../components/Grid';
+import logo from '../img/logomenor.png';
+import './index.css';
+import AddIcon from '@material-ui/icons/Add';
+import AddIcCallIcon from '@material-ui/icons/AddIcCall';
+import DeleteIcon from '@material-ui/icons/Delete';
+import CreateIcon from '@material-ui/icons/Create';
+import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
+import PermDataSettingIcon from '@material-ui/icons/PermDataSetting';
+import ContactSupportSharpIcon from '@material-ui/icons/ContactSupportSharp';
 
 const drawerWidth = 240;
 
@@ -69,18 +74,18 @@ export default function PermanentDrawerLeft() {
                 </div>
                 <Divider />
                 <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+                    {['Adicionar', 'Deletar', 'Editar', 'Definir responsável'].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                            <ListItemIcon>{index === 0 ? <AddIcon /> : index ===1 ? <DeleteIcon /> : index === 2 ? <CreateIcon /> : <DirectionsRunIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
                 </List>
                 <Divider />
                 <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                    {['Configurações', 'Informações', 'Contatos'].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                            <ListItemIcon>{ index === 0 ?<PermDataSettingIcon /> : index === 1 ?<ContactSupportSharpIcon /> : <AddIcCallIcon /> }</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}

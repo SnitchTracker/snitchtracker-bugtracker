@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container'
 import './index.css'
 import TextField from '@material-ui/core/TextField'
+import {Link} from 'react-router-dom'
 
 const Login = () => {
     return (
@@ -23,7 +24,9 @@ const Login = () => {
                         Entrar
                     </Button>
                     <Button variant="outlined">
+                        <Link to='/cadastrar' >
                         Cadastrar-se
+                        </Link>
                     </Button>
                 </div>
             </Container>
