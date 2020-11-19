@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 app.use(allowCors);
 app.use('/tasks',TaskController);
 app.use('/users',UserController);
+app.use('/text', TextController);
+app.use('/title', TitleController);
+
 db.on('error',()=>{
     console.log('Erro na conexão')
 })
