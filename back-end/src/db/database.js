@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const db = mongoose.connect('mongodb://localhost:27017/bancodedados', {
+const db = mongoose.connect('mongodb+srv://wesleyduartedev:191095veralucia@cluster0.kapsf.mongodb.net/snitchtracker', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

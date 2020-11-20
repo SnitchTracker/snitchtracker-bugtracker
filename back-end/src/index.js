@@ -5,14 +5,18 @@ const allowCors = require('./middlewares/cors');
 const db = require('./db/database');
 const app = express();
 const port = 4000;
-const TaskController = require('./controllers/TaskController');
+
+
 const UserController = require('./controllers/UserController');
+const TicketController = require('./controllers/TicketController');
+const DashboardController = require('./controllers/DashboardController');
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json());
 app.use(allowCors);
-app.use('/tasks',TaskController);
 app.use('/users',UserController);
+app.use('/ticket',TicketController);
+app.use('/dashboard',DashboardController);
 db.on('error',()=>{
     console.log('Erro na conexão')
 })
