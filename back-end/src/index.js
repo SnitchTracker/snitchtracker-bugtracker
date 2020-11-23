@@ -10,6 +10,7 @@ const port = 4000;
 const UserController = require('./controllers/UserController');
 const TicketController = require('./controllers/TicketController');
 const DashboardController = require('./controllers/DashboardController');
+const ProkjectController = require('./controllers/ProjectController');
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json());
@@ -17,6 +18,7 @@ app.use(allowCors);
 app.use('/users',UserController);
 app.use('/ticket',TicketController);
 app.use('/dashboard',DashboardController);
+app.use('/projects', ProkjectController);
 db.on('error',()=>{
     console.log('Erro na conexão')
 })

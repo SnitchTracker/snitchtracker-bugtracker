@@ -66,22 +66,3 @@ router.delete('/:id', async (req, res) => {
 
 module.exports = router;
 
-{/*router.get('/users', async (req,res)=>{
-   id.find().then(...id => res.json(id));
-    
-  });
-  // UPDATE
-  router.put('/:id', async (req,res) =>{
-      let id = req.params.id;
-      let name = req.body.task;
-      let status = req.body.status;
-      let task = await Task.updateOne({_id: id},{
-          task: name,
-          status: status
-      })
-      res.json(task);
-
-    });
-
-
-    module.exports = router; */}
