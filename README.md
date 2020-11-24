@@ -1,0 +1,2 @@
+# snitchtracker-bugtracker
+O objetivo desse projeto é construir, do zero, seu próprio sistema de acompanhamento de bugs. Esse sistema tem uma arquitetura bem característica, que se assemelha a sistemas de ticket de empresas de suporte, e provavelmente vocês já tiveram contato com algum sistema do tipo ao longo de suas vidas (seja do lado do cliente, seja do lado da empresa, seja do lado dos desenvolvedores).
