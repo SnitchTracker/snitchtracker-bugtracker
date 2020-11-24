@@ -16,7 +16,6 @@ import logo from '../img/logomenor.png';
 import './index.css';
 import AddIcon from '@material-ui/icons/Add';
 import AddIcCallIcon from '@material-ui/icons/AddIcCall';
-import DeleteIcon from '@material-ui/icons/Delete';
 import CreateIcon from '@material-ui/icons/Create';
 import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import PermDataSettingIcon from '@material-ui/icons/PermDataSetting';
@@ -74,7 +73,7 @@ export default function PermanentDrawerLeft() {
                 </div>
                 <Divider />
                 <List>
-                    {['Criar chamado', 'Criar Relatorio', 'Ir para'].map((text, index) => (
+                    {['Addicionar', 'Criar Relatorio', 'Ir para'].map((text, index) => (
                         <ListItem button key={text}>
                             <ListItemIcon>{index === 0 ? <AddIcon /> : index ===1 ? <CreateIcon /> : <DirectionsRunIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
@@ -97,7 +96,7 @@ export default function PermanentDrawerLeft() {
                         <CustomizedTables />
                     </Typography>
                     <Typography paragraph>
-                    <button className = 'criar'>Criar chamado</button>
+                    <button className='criar'>Criar chamado</button>
                     </Typography>
                 </main>
             </div>
