@@ -74,9 +74,9 @@ export default function PermanentDrawerLeft() {
                 </div>
                 <Divider />
                 <List>
-                    {['Adicionar', 'Deletar', 'Editar', 'Definir responsável'].map((text, index) => (
+                    {['Criar chamado', 'Criar Relatorio', 'Ir para'].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>{index === 0 ? <AddIcon /> : index ===1 ? <DeleteIcon /> : index === 2 ? <CreateIcon /> : <DirectionsRunIcon />}</ListItemIcon>
+                            <ListItemIcon>{index === 0 ? <AddIcon /> : index ===1 ? <CreateIcon /> : <DirectionsRunIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
@@ -91,12 +91,13 @@ export default function PermanentDrawerLeft() {
                     ))}
                 </List>
             </Drawer>
-                <main className={classes.content}>
+                <main className={`${classes.content} corpo`}  >
                     <div className={classes.toolbar} />
                     <Typography paragraph>
                         <CustomizedTables />
                     </Typography>
                     <Typography paragraph>
+                    <button className = 'criar'>Criar chamado</button>
                     </Typography>
                 </main>
             </div>
