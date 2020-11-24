@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const authMiddleware = require('../middlewares/cors')
+const authMiddleware = require('../middlewares/Auth')
+
+
 router.use(authMiddleware)
 router.get('/', async (req, res) => {
 
-    res.send({ ok : true})
+    res.send({ ok : true , user: req.userId })
     
 
 });
