@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Cadastro from './pages/cadastro';
-import CriarTicket from './pages/criarTicket';
-import DashBoard from './pages/dashboard'
-import Login from './pages/login'
-import ViewTicket from './pages/viewTicket';
+import Cadastro from './pages/Cadastro';
+import CriarTicket from './pages/CriarTicket';
+import DashBoard from './pages/Dashboard'
+import Login from './pages/Login'
+import ViewTicket from './pages/ViewTicket';
 
 
 function App() {

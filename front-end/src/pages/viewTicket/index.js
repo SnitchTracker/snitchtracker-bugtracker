@@ -58,7 +58,7 @@ const usarEstilo = makeStyles((theme) => ({
 
 const ViewTicket = () => {
 
-    
+
 
     const [priority, setPriority] = useState('alta');
 
@@ -101,7 +101,7 @@ const ViewTicket = () => {
                                             <Typography className={classes.medium}>Média</Typography>}
                                         {priority === 'baixa' &&
                                             <Typography className={classes.low}>Baixa</Typography>} */}
-                                            <Prioritys />
+                                        <Prioritys />
                                     </Grid>
                                     <Grid item xs={3}>
                                         <Typography className={classes.titleSecondary}>Plataforma:</Typography>

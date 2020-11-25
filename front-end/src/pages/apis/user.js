@@ -2,6 +2,14 @@ import axios from 'axios';
 
 export default class ApiUser {
 
+    async cadastrarUser(data) {
+        
+        let authentication = await axios.post('http://127.0.0.1:4000/users', data)
+
+        return authentication
+    }
+
+
     async validarLoginUser(data) {
         
         let {password, email} = data;
